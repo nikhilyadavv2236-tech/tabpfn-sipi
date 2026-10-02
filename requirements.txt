@@ -1,0 +1,8 @@
+tabpfn
+xgboost
+scikit-learn
+scipy
+numpy
+pandas
+matplotlib
+tabulate

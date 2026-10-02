@@ -1,0 +1,25 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Generated datasets and experiment outputs
+data/
+results/
+figures/
+output/
+
+# Manuscript and publication artifacts
+paper_sections.tex
+*.pdf
+*.docx
+*.doc
+*.tex
+
+# Local secrets and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
