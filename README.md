@@ -25,4 +25,4 @@ python 02_run_experiment.py
 python 03_plot_results.py
 ```
 
-Generated data, results, figures, local environments, and manuscript files are excluded from version control.
+Generated datasets, experiment results, and plots are included for reproducibility. Manuscript source files, local environments, and caches are excluded.

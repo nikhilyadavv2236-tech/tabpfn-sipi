@@ -4,18 +4,21 @@ venv/
 __pycache__/
 *.py[cod]
 
-# Generated datasets and experiment outputs
-data/
-results/
-figures/
-output/
-
-# Manuscript and publication artifacts
-paper_sections.tex
-*.pdf
+# Manuscript and publication source files
+*.tex
 *.docx
 *.doc
-*.tex
+paper*
+manuscript*
+
+# PDF files are excluded by default; include only generated plot PDFs
+*.pdf
+!output/
+output/*
+!output/pdf/
+output/pdf/*
+!output/pdf/picp90_vs_n.pdf
+!output/pdf/rmse_vs_n.pdf
 
 # Local secrets and editor files
 .env
