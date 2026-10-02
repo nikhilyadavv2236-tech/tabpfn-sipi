@@ -59,7 +59,7 @@ def main():
     agg["total_time_mean_s"] = agg["fit_time_mean_s"] + agg["predict_time_mean_s"]
     agg.to_csv("results/metrics_by_budget.csv", index=False)
 
-    # Figure: mean +/- 1 SD across the ten matched training draws.
+    # Figure: mean +/- 1 SD across the matched training draws at each budget.
     fig, ax = plt.subplots(figsize=(6.4, 4.4))
     for model in agg["model"].unique():
         sub = agg[agg["model"] == model].sort_values("N")
@@ -71,7 +71,10 @@ def main():
     ax.set_xscale("log")
     ax.set_xlabel("Training budget N (log scale)")
     ax.set_ylabel("Held-out RMSE (dB)")
-    ax.set_title("Few-shot insertion-loss regression (mean +/- 1 SD, 10 seeds)")
+    ax.set_title(
+        "Insertion-loss regression (mean +/- 1 SD; 10 seeds, N=50: 30)",
+        fontsize=10,
+    )
     ax.legend()
     ax.grid(alpha=0.3, which="both")
     fig.tight_layout()

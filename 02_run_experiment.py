@@ -1,7 +1,7 @@
 """
 Core few-shot experiment: TabPFN vs XGBoost vs MLP vs GP at training
-budgets N in {10, 20, 50, 100, 200}, each over 10 random seeds, evaluated
-on the SAME fixed 300-row held-out test set every time.
+budgets N in {10, 20, 50, 100, 200}, with 10 seeds per budget except N=50,
+which uses 30 seeds. Every run is evaluated on the same fixed test set.
 
 Requires (install once, e.g. in a Colab cell):
     pip install tabpfn xgboost scikit-learn scipy pandas
