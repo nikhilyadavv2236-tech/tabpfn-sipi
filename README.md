@@ -100,4 +100,3 @@ The current generated data, results, and plots are committed as a reproducibilit
 - `physics.py` uses closed-form microstrip and coupled-mode approximations with fixed model assumptions; outputs should be treated as synthetic proxy labels.
 - The benchmark compares models on this generated distribution and fixed test set. It does not establish performance on measured boards or other electromagnetic geometries.
 - TabPFN results depend on the installed package, available model access, and local hardware. The script can omit TabPFN if access is missing.
-- Full manuscript source files are intentionally excluded from this repository.
